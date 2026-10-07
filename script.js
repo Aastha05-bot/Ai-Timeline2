@@ -5,9 +5,7 @@
   const ACTIVITIES_URL = "#activities";
   const PAPERS = ["lavender", "butter", "sky", "peach", "sage", "sand", "mist"];
   const UI = {
-    en: { explore: "Explore activities", visit: "Visit Body & Data", 
-      // hint: "Tap any year or use", keys: "to move through the years", 
-      next: "Next", prev: "Previous", close: "Close", still: "Still exploring?", stillText: "The timeline goes back to the start in a few seconds so the next visitor can begin fresh.", keep: "Keep exploring", winter: "AI winter" },
+    en: { explore: "Explore activities", visit: "Visit Body & Data", hint: "Tap any year or use", keys: "to move through the years", next: "Next", prev: "Previous", close: "Close", still: "Still exploring?", stillText: "The timeline goes back to the start in a few seconds so the next visitor can begin fresh.", keep: "Keep exploring", winter: "AI winter" },
     ne: { explore: "गतिविधिहरू हेर्नुहोस्", visit: "बडी एन्ड डेटामा जानुहोस्", hint: "थप पढ्न कुनै पनि वर्षमा थिच्नुहोस्।", keys: "वर्षहरू अघि-पछि सार्न", next: "अर्को", prev: "अघिल्लो", close: "बन्द गर्नुहोस्", still: "अझै हेर्दै हुनुहुन्छ?", stillText: "अर्को आगन्तुकले नयाँ सुरुवात गर्न सकून् भनेर टाइमलाइन केही सेकेन्डमा सुरुमा फर्किन्छ।", keep: "हेर्न जारी राख्नुहोस्", winter: "एआई हिउँद" }
   };
   const P = {
@@ -23,7 +21,7 @@
   const shuffle = () => { const out = []; EV.forEach(() => { const o = PAPERS.filter(p => p !== out[out.length - 1]); out.push(o[Math.floor(Math.random() * o.length)]); }); return out; };
 
   const HOME = Math.max(0, EV.findIndex(e => e.year === "1956"));
-  const fmt = s => esc(s).replace(/\n\n/g, "<br><br>");
+  const fmt = s => esc(s.trim()).replace(/\n\s*/g, "<br><br>");
   const S = { page: EV[HOME].section, sel: HOME, seen: new Set([HOME]), overview: false, idle: false, lang: "en", dark: false, papers: shuffle(), animate: true };
   try { S.dark = localStorage.getItem("ai-tl-dark") === "1"; } catch (e) {}
   const root = document.getElementById("root");
@@ -118,8 +116,7 @@
         </div></header>
       <div class="wrap">
         <div class="title"><h1 class="bd-h1 bd-barred">${esc(ne ? T.title_ne : T.title)}</h1>
-          
-          </div>
+          <p class="hintline"><span>${t.hint}</span>${keys(t.keys)}</p></div>
         <main class="stage"><div class="track">${detail(t)}${timeline(t)}</div></main>
         <div class="vlist">${mobileList(t)}</div>
       </div>

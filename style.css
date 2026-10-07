@@ -282,7 +282,7 @@
 .bd-h1{font-size:var(--bd-text-3xl);line-height:1}.bd-h3{font-size:var(--bd-text-lg)}
 .bd-h2{font-family:var(--bd-font-display);font-weight:400;color:var(--bd-heading);text-transform:uppercase;font-size:var(--bd-text-2xl);margin:0;line-height:1.05}
 .bd-barred{display:grid;gap:var(--bd-space-3)}
-/* .bd-barred::after{content:"";display:block;height:10px;width:4.5rem;background:var(--bd-lavender)} */
+.bd-barred::after{content:"";display:block;height:10px;width:4.5rem;background:var(--bd-lavender)}
 .bd-logo{display:inline-flex;align-items:center}
 .bd-logo img{height:44px;width:auto;box-sizing:content-box;background:var(--bd-logo-plate);padding:var(--bd-logo-pad)}
 .bd-doodles{background-image:url(image/doodles.svg);background-size:160px}
