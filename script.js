@@ -5,8 +5,10 @@
   const ACTIVITIES_URL = "#activities";
   const PAPERS = ["lavender", "butter", "sky", "peach", "sage", "sand", "mist"];
   const UI = {
-    en: { explore: "Explore activities", visit: "Visit Body & Data", next: "Next", prev: "Previous", close: "Close", still: "Still exploring?", stillText: "The timeline goes back to the start in a few seconds so the next visitor can begin fresh.", keep: "Keep exploring", winter: "AI winter" },
-    ne: { explore: "गतिविधिहरू हेर्नुहोस्", visit: "बडी एन्ड डेटामा जानुहोस्",  next: "अर्को", prev: "अघिल्लो", close: "बन्द गर्नुहोस्", still: "अझै हेर्दै हुनुहुन्छ?", stillText: "अर्को आगन्तुकले नयाँ सुरुवात गर्न सकून् भनेर टाइमलाइन केही सेकेन्डमा सुरुमा फर्किन्छ।", keep: "हेर्न जारी राख्नुहोस्", winter: "एआई हिउँद" }
+    en: { explore: "Explore activities", visit: "Visit Body & Data", 
+      // hint: "Tap any year or use", keys: "to move through the years", 
+      next: "Next", prev: "Previous", close: "Close", still: "Still exploring?", stillText: "The timeline goes back to the start in a few seconds so the next visitor can begin fresh.", keep: "Keep exploring", winter: "AI winter" },
+    ne: { explore: "गतिविधिहरू हेर्नुहोस्", visit: "बडी एन्ड डेटामा जानुहोस्", hint: "थप पढ्न कुनै पनि वर्षमा थिच्नुहोस्।", keys: "वर्षहरू अघि-पछि सार्न", next: "अर्को", prev: "अघिल्लो", close: "बन्द गर्नुहोस्", still: "अझै हेर्दै हुनुहुन्छ?", stillText: "अर्को आगन्तुकले नयाँ सुरुवात गर्न सकून् भनेर टाइमलाइन केही सेकेन्डमा सुरुमा फर्किन्छ।", keep: "हेर्न जारी राख्नुहोस्", winter: "एआई हिउँद" }
   };
   const P = {
     "arrow-right": "M5 12h14M13 6l6 6-6 6", "arrow-left": "M19 12H5M11 6l-6 6 6 6",
@@ -20,7 +22,9 @@
   const START = T.sections.map((_, p) => T.sections.slice(0, p).reduce((n, s) => n + s.events.length, 0));
   const shuffle = () => { const out = []; EV.forEach(() => { const o = PAPERS.filter(p => p !== out[out.length - 1]); out.push(o[Math.floor(Math.random() * o.length)]); }); return out; };
 
-  const S = { page: 0, sel: 0, seen: new Set([0]), overview: false, idle: false, lang: "en", dark: false, papers: shuffle(), animate: true };
+  const HOME = Math.max(0, EV.findIndex(e => e.year === "1956"));
+  const fmt = s => esc(s).replace(/\n\n/g, "<br><br>");
+  const S = { page: EV[HOME].section, sel: HOME, seen: new Set([HOME]), overview: false, idle: false, lang: "en", dark: false, papers: shuffle(), animate: true };
   try { S.dark = localStorage.getItem("ai-tl-dark") === "1"; } catch (e) {}
   const root = document.getElementById("root");
   const timers = {};
@@ -35,7 +39,7 @@
   const toggle = i => { if (S.sel === i) { S.sel = -1; S.animate = false; render(); } else go(i); };
   const showPage = p => { if (p >= 0 && p < T.sections.length) go(START[p]); };
   function reset() {
-    Object.assign(S, { idle: false, overview: false, page: 0, sel: 0, seen: new Set([0]), lang: "en", papers: shuffle(), animate: true });
+    Object.assign(S, { idle: false, overview: false, page: EV[HOME].section, sel: HOME, seen: new Set([HOME]), lang: "en", papers: shuffle(), animate: true });
     render();
   }
   function arm() {
@@ -63,7 +67,7 @@
         const cls = ["event", e.period && "period", S.seen.has(i) && "seen", S.sel === i && "sel", j === 0 && !hasPrev && "first", j === n - 1 && !hasNext && "last"].filter(Boolean).join(" ");
         return `<li class="${cls}" data-i="${i}"><div class="item">
           <p class="year"${e.period ? ' style="font-size:1rem"' : ""}>${esc(e.year)}</p>${e.period ? "" : `<p class="text">${esc(tr(e, "title"))}</p>`}</div>
-          <span class="dot">${e.period ? t.winter : ""}</span>
+          <span class="dot">${e.period ? (e.pill || t.winter) : ""}</span>
           <button class="hit" data-toggle="${i}" aria-expanded="${S.sel === i}" aria-label="${esc(e.year + ": " + tr(e, "title"))}"></button></li>`;
       }).join("");
       return `<section class="page${active ? " active" : ""}" aria-label="${esc(s.label)}"><ol class="events" style="grid-template-columns:${cols}">
@@ -80,7 +84,7 @@
     return `<div class="detail open" aria-live="polite"><div class="box">${media}<div class="box-main">
       <div class="box-head"><span class="box-year">${esc(e.year)}</span>
         <button class="bd-btn bd-btn--quiet" data-close aria-label="${t.close}">${icon("close")}</button></div>
-      <h2>${esc(tr(e, "title"))}</h2><p class="box-text">${esc(tr(e, "description"))}</p></div></div></div>`;
+      <h2>${esc(tr(e, "title"))}</h2><p class="box-text">${fmt(tr(e, "description"))}</p></div></div></div>`;
   }
 
   function mobileList(t) {
@@ -92,7 +96,7 @@
         <span class="vdot"></span><span class="vtxt"><span class="year">${esc(e.year)}</span><span class="text">${esc(tr(e, "title"))}</span></span>
         <span class="vchev">${icon("chevron-down")}</span></button>
         ${open ? `<div class="vpanel">${e.image ? `<div class="vmedia" style="background-color:var(--bd-${S.papers[i]})"><img src="${e.image}" alt="${esc(tr(e, "title"))}"></div>` : ""}
-          <div class="vbody"><p>${esc(tr(e, "description"))}</p>
+          <div class="vbody"><p>${fmt(tr(e, "description"))}</p>
           ${next ? `<button class="bd-btn bd-btn--sm" data-go="${i + 1}">${t.next}: ${esc(next.short || next.year)} ${icon("arrow-right")}</button>` : ""}</div></div>` : ""}</li>`;
     }).join("")}</ol></div>`).join("");
   }
@@ -113,11 +117,9 @@
             <button aria-pressed="${ne}" data-lang="ne" lang="ne">नेपाली</button></div>
         </div></header>
       <div class="wrap">
-        <div class="title">
-          <h1 class="bd-h1 bd-barred">
-            ${esc(ne ? T.title_ne : T.title)}
-          </h1>
-        </div>
+        <div class="title"><h1 class="bd-h1 bd-barred">${esc(ne ? T.title_ne : T.title)}</h1>
+          
+          </div>
         <main class="stage"><div class="track">${detail(t)}${timeline(t)}</div></main>
         <div class="vlist">${mobileList(t)}</div>
       </div>

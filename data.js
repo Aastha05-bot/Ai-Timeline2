@@ -1,48 +1,197 @@
 window.AI_TIMELINE = {
   title: "History of AI",
   title_ne: "एआईको इतिहास",
-  overview: {
-    title: "What is AI?",
-    text: "Artificial Intelligence (AI) means systems that can solve problems autonomously, mimicking human intelligence. It brings together technology such as machine learning and large language models (LLMs), the capabilities these systems gain, and the applications we meet every day.",
-    ne: { title: "एआई भनेको के हो?", text: "आर्टिफिसियल इन्टेलिजेन्स (एआई) भन्नाले मानव बुद्धिको नक्कल गर्दै आफैं समस्या समाधान गर्न सक्ने प्रणालीलाई जनाउँछ। यसमा मेसिन लर्निङ र लार्ज ल्याङ्ग्वेज मोडेल (एलएलएम) जस्ता प्रविधि, यी प्रणालीले हासिल गर्ने क्षमता, र हामीले दैनिक जीवनमा भेट्ने प्रयोगहरू समेटिन्छन्।" },
-    image: "image/ai-overview.png"
-  },
+  // overview: {
+  //   title: "What is AI?",
+  //   text: "Artificial Intelligence (AI) means systems that can solve problems autonomously, mimicking human intelligence. It brings together technology such as machine learning and large language models (LLMs), the capabilities these systems gain, and the applications we meet every day.",
+  //   ne: { title: "एआई भनेको के हो?", text: "आर्टिफिसियल इन्टेलिजेन्स (एआई) भन्नाले मानव बुद्धिको नक्कल गर्दै आफैं समस्या समाधान गर्न सक्ने प्रणालीलाई जनाउँछ। यसमा मेसिन लर्निङ र लार्ज ल्याङ्ग्वेज मोडेल (एलएलएम) जस्ता प्रविधि, यी प्रणालीले हासिल गर्ने क्षमता, र हामीले दैनिक जीवनमा भेट्ने प्रयोगहरू समेटिन्छन्।" },
+  //   image: "image/ai-overview.png"
+  // },
   sections: [
-    { label: "1956 – 1997", events: [
-      { year: "1956",
-        title: "Term ‘Artificial Intelligence’ is coined", 
-        description: "The term \"Artificial Intelligence\" was coined in 1955 by American computer scientist John McCarthy in a written proposal for the historic Dartmouth Summer Research Project. This landmark summer workshop, held in 1956, gathered top researchers and officially established AI as an independent academic and scientific field.", 
-        image: "image/1956.jpg",
-        ne: { 
-          title: "‘आर्टिफिसियल इन्टेलिजेन्स’ शब्दको जन्म", 
-          description: "अमेरिकी कम्प्युटर वैज्ञानिक जोन म्याकार्थीले सन् १९५५ मा ऐतिहासिक डार्टमथ समर रिसर्च प्रोजेक्टका लागि लेखेको प्रस्तावमा \"आर्टिफिसियल इन्टेलिजेन्स\" शब्द पहिलो पटक प्रयोग गरे। सन् १९५६ मा भएको यो कार्यशालाले प्रमुख अनुसन्धानकर्ताहरूलाई एकै ठाउँमा ल्यायो र एआईलाई छुट्टै शैक्षिक तथा वैज्ञानिक क्षेत्रका रूपमा औपचारिक रूपमा स्थापित गर्‍यो।" } 
+    { label: "1843 – 1955", events: [
+      { year: "1843", title: `Ada Lovelace: Imagination and Boundaries`, image: "image/1843.jpg", description: `While working on Charles Babbage’s plans for the Analytical Engine, Ada Lovelace publishes what is widely considered the first computer algorithm. She also imagines that machines could go beyond arithmetic and compose music, writing that the Engine could “weave algebraic patterns just as the Jacquard loom weaves flowers and leaves.”
+      At the same time, she argues that a machine cannot originate ideas of its own – it can only perform what humans know how to instruct it to do. This tension between machine capability and human creativity later became known as “Lady Lovelace’s Objection.”`,
+        ne: {
+          title: "",
+          description:"",
+        }
+    },
+      { year: "1950",
+        title: `The Turing Test`, 
+        image: "image/1950.jpg", 
+        description: `Nearly a century after Ada Lovelace, Alan Turing directly engages with the question Lovelace raised: can a machine produce something that could be considered thought? In Computing Machinery and Intelligence, he proposes the Imitation Game, later known as the Turing Test. Rather than asking whether a machine truly thinks, Turing asks whether its responses can be indistinguishable from those of a human – shifting the debate from what happens inside a machine to what it can demonstrate through its behavior.`,
+        ne: {
+          title: "",
+          description:"",
+        }
       },
+      { year: "1955", 
+        title: `Logic & Symbolic AI`, 
+        image: "image/1955.jpeg", 
+        description: `Allen Newell, Herbert Simon and Cliff Shaw build the Logic Theorist, a program designed to mimic human heuristic problem-solving rather than search exhaustively. It proved 38 of the first 52 theorems in Whitehead and Russell's Principia Mathematica. Demonstrated at the 1956 Dartmouth workshop, it was the only working AI program there, showing that machines could manipulate non-numerical symbols and logic.`,
+        ne: {
+          title: "",
+          description:"",
+        }
+      }
+    ]},
+    { label: "1956 – 1980", events: [
+      { year: "1956", 
+        title: `Term ‘Artificial Intelligence’ is coined`, 
+        image: "image/1956.jpg", 
+        description: `John McCarthy introduces the term “Artificial Intelligence” in a funding proposal to the Rockefeller Foundation for a summer workshop at Dartmouth College. The original document outlined a plan where a group specified as “ten men” could make significant progress in a single summer. Rather than emerging from strict scientific precision, the phrase was a strategic choice to secure institutional grants and establish academic independence from rival fields like cybernetics.`,
+      ne: {
+          title: "",
+          description:"",
+        }
+       },
       { year: "1958", 
-        title: "‘Neural Network’ introduced", 
-        description: "In 1958, psychologist Frank Rosenblatt introduced the perceptron, one of the first artificial neural networks. It could learn to sort inputs into categories by adjusting the strength of its connections from examples. Rosenblatt first ran it as a simulation on an IBM 704 computer and later built it as a dedicated machine, laying early groundwork for modern deep learning.", 
-        image: "image/1958.jpg",
-        ne: { 
-          title: "‘न्युरल नेटवर्क’ को सुरुवात", 
-          description: "सन् १९५८ मा मनोवैज्ञानिक फ्र्याङ्क रोजेनब्लाटले पहिलो कृत्रिम न्युरल नेटवर्कमध्ये एक, पर्सेप्ट्रोन, प्रस्तुत गरे। यसले उदाहरणहरूबाट आफ्ना जडानहरूको बल मिलाउँदै इनपुटलाई वर्गमा छुट्याउन सिक्न सक्थ्यो। रोजेनब्लाटले सुरुमा यसलाई IBM 704 कम्प्युटरमा सिमुलेसनका रूपमा चलाए र पछि छुट्टै मेसिनका रूपमा बनाए, जसले आधुनिक डिप लर्निङको प्रारम्भिक जग बसाल्यो।" } 
+        title: `‘Neural Network’ introduced`, 
+        image: "image/1958.jpg", 
+        description: `Frank Rosenblatt develops the Perceptron, a pattern-recognition machine that learns by adjusting weighted connections. Funded by the US Office of Naval Research, the technology was promoted through sensationalized press claims that it would soon walk and talk. When systemic algorithmic limitations were later exposed, institutional funding collapsed, demonstrating how early AI development was tied to a cycle of over-promising and resource withdrawal.`, 
+      ne: {
+          title: "",
+          description:"",
+        }
       },
       { year: "1966", 
-        title: "Eliza: first chatbot", 
-        description: "Eliza was created at MIT by computer scientist Joseph Weizenbaum. It used simple pattern matching to reflect a person's words back as questions, and its best-known script imitated a psychotherapist. Even though it understood nothing, many users felt it was listening to them, a reaction now called the ELIZA effect.", image: "image/1966.jpg",
-        ne: { title: "इलाइजा: पहिलो च्याटबट", description: "इलाइजा MIT मा कम्प्युटर वैज्ञानिक जोसेफ वाइजेनबमले बनाएका थिए। यसले साधारण ढाँचा मिलानको प्रयोग गरेर मानिसका शब्दलाई प्रश्नका रूपमा फर्काउँथ्यो, र यसको सबैभन्दा चर्चित स्क्रिप्टले मनोचिकित्सकको नक्कल गर्थ्यो। यसले केही नबुझे पनि धेरै प्रयोगकर्तालाई यसले आफ्नो कुरा सुनिरहेको जस्तो लाग्थ्यो, जसलाई अहिले ‘इलाइजा प्रभाव’ भनिन्छ।" } },
-      { year: "1974 – 1993", short: "1970s–90s", period: true, title: "AI winter", description: "Early AI did not deliver what had been promised. Governments and companies cut funding in the mid-1970s and again in the late 1980s, and research slowed down. These quiet years are known as the ‘AI winters’.",
-        ne: { title: "एआई हिउँद", description: "प्रारम्भिक एआईले गरिएका वाचा पूरा गर्न सकेन। सन् १९७० को मध्यतिर र फेरि १९८० को अन्त्यतिर सरकार र कम्पनीहरूले लगानी घटाए, र अनुसन्धान सुस्त भयो। यी शान्त वर्षहरूलाई ‘एआई हिउँद’ भनिन्छ।" } },
-      { year: "1997", title: "Deep Blue beats Garry Kasparov", description: "In May 1997, IBM's Deep Blue supercomputer defeated world chess champion Garry Kasparov in a six-game match, winning 3.5 to 2.5. It was the first time a computer beat a reigning world champion in a match under standard tournament conditions.", image: "image/1997.jpg",
-        ne: { title: "डिप ब्लुले गेरी कास्पारोभलाई हरायो", description: "सन् १९९७ को मेमा IBM को डिप ब्लु सुपरकम्प्युटरले विश्व चेस च्याम्पियन गेरी कास्पारोभलाई छ खेलको म्याचमा ३.५–२.५ ले हरायो। मानक प्रतियोगिताका नियममा कम्प्युटरले बहालवाला विश्व च्याम्पियनलाई हराएको यो पहिलो पटक थियो।" } }
+        title: `ELIZA, the first chatbot`, 
+        image: "image/1966.jpg", 
+        description: `Joseph Weizenbaum creates ELIZA, a basic chatbot that simulates a psychotherapist by rephrasing user input as questions. Despite possessing no actual understanding, users – including Weizenbaum's own staff – frequently projected deep emotional comprehension onto the system. This phenomenon, known as the “ELIZA effect,” highlighted a persistent human vulnerability: the readiness to attribute relational intimacy and intelligence to fluent text.` ,
+      ne: {
+          title: "",
+          description:"",
+        }},
+      { year: "1974 – 1980", 
+        period: true, 
+        pill: "1st AI winter", 
+        title: `First AI winter`, 
+        description: `Following the publication of the UK’s Lighthill Report – which concluded that AI research had failed to achieve its highly publicized goals – government funding was drastically reduced. AI progress has come in boom-and-bust cycles.`,
+      ne: {
+          title: "",
+          description:"",
+        } }
     ]},
-    { label: "2011 – 2022", events: [
-      { year: "2011", title: "Apple launches Siri", description: "Apple introduced Siri as a built-in voice assistant with the iPhone 4S in October 2011. Users could speak to their phone to send messages, set reminders and search, which brought voice-based AI into everyday life for millions of people.", image: "image/2011.jpg",
-        ne: { title: "एप्पलले सिरी सार्वजनिक गर्‍यो", description: "एप्पलले अक्टोबर २०११ मा iPhone 4S सँगै सिरीलाई भित्री भ्वाइस असिस्टेन्टका रूपमा ल्यायो। प्रयोगकर्ताले फोनसँग बोलेरै सन्देश पठाउन, रिमाइन्डर राख्न र खोज्न सक्थे, जसले आवाजमा आधारित एआईलाई लाखौं मानिसको दैनिक जीवनमा पुर्‍यायो।" } },
-      { year: "2014", title: "Facebook launches ‘DeepFace’", description: "DeepFace was a deep neural network built by Facebook's AI research team to recognise faces in photos. It was trained on millions of face images and reached about 97% accuracy on a standard benchmark, very close to human performance.", image: "image/2014.jpg",
-        ne: { title: "फेसबुकले ‘डिपफेस’ सार्वजनिक गर्‍यो", description: "डिपफेस फेसबुकको एआई अनुसन्धान टोलीले फोटोमा अनुहार चिन्न बनाएको डिप न्युरल नेटवर्क थियो। लाखौं अनुहारका तस्बिरबाट तालिम दिइएको यसले एउटा मानक परीक्षणमा करिब ९७% शुद्धता हासिल गर्‍यो, जुन मानिसको क्षमताको धेरै नजिक थियो।" } },
-      { year: "2016", title: "AlphaGo beats Lee Sedol", description: "In March 2016, Google DeepMind's AlphaGo defeated Lee Sedol, one of the world's best Go players, four games to one in Seoul. Go has far more possible positions than chess, so the win was seen as a major breakthrough for AI.", image: "image/2016.jpg",
-        ne: { title: "अल्फागोले ली सेडोललाई हरायो", description: "मार्च २०१६ मा सोलमा गुगल डिपमाइन्डको अल्फागोले विश्वका उत्कृष्ट गो खेलाडीमध्ये एक ली सेडोललाई ४–१ ले हरायो। गोमा चेसभन्दा धेरै गुणा बढी सम्भावित चालहरू हुने भएकाले यो जितलाई एआईको ठूलो सफलता मानियो।" } },
-      { year: "2022", title: "ChatGPT (GPT-3.5)", description: "OpenAI released ChatGPT to the public in November 2022. Built on its GPT-3.5 language models, it let anyone hold a natural conversation with an AI, write text and answer questions. It reached a huge audience within weeks and started the current wave of generative AI.", image: "image/2022.jpg",
-        ne: { title: "च्याटजीपीटी (GPT-3.5)", description: "ओपनएआईले नोभेम्बर २०२२ मा च्याटजीपीटी सर्वसाधारणका लागि सार्वजनिक गर्‍यो। GPT-3.5 भाषा मोडेलमा आधारित यसले जोकोहीलाई एआईसँग सहज कुराकानी गर्न, लेख्न र प्रश्नको उत्तर पाउन सक्षम बनायो। केही हप्तामै यो ठूलो संख्यामा मानिससम्म पुग्यो र जेनेरेटिभ एआईको वर्तमान लहर सुरु गर्‍यो।" } }
+    { label: "1987 – 2011", events: [
+      { year: "1987 – 1993", 
+        period: true, 
+        pill: "2nd AI winter", 
+        title: `Second AI winter`, 
+        description: `The billion-dollar market for “expert systems” – software designed to encode the rules of human specialists – collapses when the technology proves brittle, unmaintainable, and overly expensive for companies to scale. As commercial enthusiasm vanished, the field experienced a severe downturn in funding and reputation, prompting many researchers to drop the phrase “artificial intelligence” from their work entirely to distance themselves from the collapse.`, 
+      ne: {
+          title: "",
+          description:"",
+        }},
+      { year: "1997", 
+        title: `Deep Blue beats Garry Kasparov`, 
+        image: "image/1997.jpg", 
+        description: `IBM's Deep Blue defeats grandmaster Garry Kasparov by processing 200 million positions per second. The victory relied on computational brute force paired with human grandmasters who adjusted the code between games.`, 
+      ne: {
+          title: "",
+          description:"",
+        }},
+      { year: "2009", 
+        title: `Fei-Fei Li launches ImageNet`,  
+        image: "image/2009.jpg", 
+        description: `Dr. Fei-Fei Li and her team release ImageNet, a massive dataset of over 14 million labeled images. This project intentionally shifted the AI community's focus away from tweaking algorithmic code and toward scaling massive, high-quality data. It provided the critical database necessary to unlock the deep learning breakthroughs that followed just three years later.` ,
+      ne: {
+          title: "",
+          description:"",
+        }},
+      { year: "2011", 
+        title: `Apple launches Siri`, 
+        image: "image/2011.jpg", 
+        description: `Apple introduces Siri, bringing voice-activated AI to millions of consumers. Early digital assistants were assigned submissive, feminized voices by default, and a 2019 UNESCO report documented that they were coded to deflect or flirt in response to harassment.`,
+      ne: {
+          title: "",
+          description:"",
+        } }
+    ]},
+    { label: "2012 – 2018", events: [
+      { year: "2012", 
+        title: `AlexNet Wins ImageNet Challenge`, 
+        image: "image/2012.jpg", 
+        description: `A deep learning model created by Alex Krizhevsky, Ilya Sutskever, and Geoffrey Hinton won a major image-recognition competition by cutting previous error rates nearly in half to an unprecedented 15.3%. By anchoring their model in massive, crowdsourced data and GPU acceleration, this milestone shifted the AI paradigm away from isolated algorithmic design toward computational scale. This event marked the beginning of the modern deep learning era and established data-intensive scale as the primary approach for AI development.` ,
+      ne: {
+          title: "",
+          description:"",
+        }},
+      { year: "2014", 
+        title: `Facebook launches DeepFace`, 
+        image: "image/2014.jpg", 
+        description: `Facebook announced face recognition with ~97% accuracy, roughly human-level, trained on photos its users had uploaded and tagged themselves. The breakthrough wasn't just technical: it showed that whoever holds the most personal data holds the most powerful AI.` ,
+      ne: {
+          title: "",
+          description:"",
+        }},
+      { year: "2016", 
+        title: `AlphaGo beats Go Grandmaster`, 
+        image: "image/2016.jpg", 
+        description: `Developed by DeepMind, AlphaGo defeated South Korean Go grandmaster Lee Sedol 4–1 in Seoul. Its play was widely praised for its creativity and unexpected moves, demonstrating that AI could produce strategies that surprised even elite human players. Beyond its technical significance, the match was a major geopolitical wake-up call, prompting China to accelerate its national AI strategy and contributing to the state-led AI competition that continues to shape global politics.` ,
+      ne: {
+          title: "",
+          description:"",
+        }},
+      { year: "2018", 
+        title: `Gender Shades Exposes AI Bias`, 
+        image: "image/2018.jpg", 
+        description: `This historic study exposed deep demographic disparities in computer vision. It revealed that AI facial recognition algorithms carried massive racial and gender biases due to flawed training data. The study exposed major racial and gender disparities in commercial facial-recognition systems and helped bring algorithmic bias into public and industry debate.` ,
+      ne: {
+          title: "",
+          description:"",
+        }}
+    ]},
+    { label: "2018 – 2024", events: [
+      { year: "2018", 
+        title: `Amazon scraps biased AI hiring tool`, 
+        image: "image/2018_1.avif", 
+        description: `Amazon abandons its AI hiring tool after discovering that it had learned to favor male candidates and penalize resumes containing terms such as “women’s.” Trained on a decade of mostly male resumes, the system reflected patterns in the historical data it was given. The case highlighted how AI systems can reproduce and amplify existing biases, turning patterns from past data into automated decisions.` ,
+      ne: {
+          title: "",
+          description:"",
+        }},
+      { year: "2022", 
+        title: `ChatGPT (GPT-3.5) released publicly`, 
+        image: "image/2022.jpg", 
+        description: `ChatGPT (GPT-3.5) is released publicly, making conversational generative AI accessible to a mass audience. Its rapid and widespread adoption made it one of the most visible AI tools in everyday use, reshaping how people encountered and used AI. It also raised new questions about accuracy, authorship, labor, privacy, bias, and the concentration of technological power.`, 
+      ne: {
+          title: "",
+          description:"",
+        }},
+      { year: "2023", 
+        title: `The Generative AI Copyright Reckoning`, 
+        image: "image/2023.jpg", 
+        description: `The explosion of consumer generative tools triggers unprecedented legal battles, headlined by The New York Times suing Microsoft and OpenAI for systemic copyright infringement. Concurrently, a historic Hollywood writers' strike (WGA) forces the industry to implement strict labor guardrails restricting studios from replacing human writers with text models.` ,
+      ne: {
+          title: "",
+          description:"",
+        }},
+      { year: "2024", 
+        title: `EU AI Act`, 
+        image: "image/2024.jpg", 
+        description: `The European Union passes the EU AI Act, creating the world's first major binding law to regulate AI. The law ranks AI systems by their level of risk. It completely bans tools that threaten human rights – like government social tracking – and forces companies building large tech models to be transparent and open to outside audits.` ,
+      ne: {
+          title: "",
+          description:"",
+        }}
+    ]},
+    { label: "2024 – 2025", events: [
+      { year: "2024", 
+        title: `African Data Workers Sue Meta`, 
+        image: "image/2024_1.webp", 
+        description: `Outsourced data workers in Kenya challenge a law that could protect foreign tech companies from being sued locally. In a landmark case in Nairobi, a judge also rules that Meta, Facebook’s parent company, can be sued in Kenya. The case involves more than 140 African content moderators who developed severe PTSD while reviewing graphic content for less than $4 an hour. The case highlights the human costs and legal challenges behind AI systems.` ,
+      ne: {
+          title: "",
+          description:"",
+        }},
+      { year: "2025", 
+        title: `AI Agents`, 
+        image: "image/2025.jpg", 
+        description: `AI began moving beyond answering questions to taking action. AI agents can now plan and carry out tasks with greater autonomy – browsing websites, using tools, writing and running code, and adapting their actions based on what they observe. Greater autonomy also brings greater risk, raising concerns about accountability when AI agents make harmful decisions or cause damage.` ,
+      ne: {
+          title: "",
+          description:"",
+        }}
     ]}
   ]
 };
