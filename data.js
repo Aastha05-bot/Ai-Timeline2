@@ -77,37 +77,22 @@ At the same time, she argues that a machine cannot originate ideas of its own �
         title: `Deep Blue beats Garry Kasparov`,
         image: "image/1997.jpg",
         description: `IBM's Deep Blue defeats grandmaster Garry Kasparov by processing 200 million positions per second. The victory relied on computational brute force paired with human grandmasters who adjusted the code between games.`,
-<<<<<<< HEAD
         ne: { title: "डिप ब्लूले गेरी कास्पारोभलाई हरायो", 
           description: `आईबीएमको डिप ब्लूले एक सेकेन्डमा २० करोड चाल जाँचेर ग्र्यान्डमास्टर गेरी कास्पारोभलाई हरायो। यो जित कम्प्युटरको तीव्र गणना र खेलका बीचमा कोड मिलाउने मानव ग्र्यान्डमास्टरहरूको साथले सम्भव भयो। ` }
-=======
-        ne: { title: "", 
-          description: `` }
->>>>>>> 12ef7093822e8cf559d0b1d37eb03809cf10bd69
       },
       { year: "2009",
         title: `Fei-Fei Li launches ImageNet`,
         image: "image/2009.jpg",
         description: `Dr. Fei-Fei Li and her team release ImageNet, a massive dataset of over 14 million labeled images. This project intentionally shifted the AI community's focus away from tweaking algorithmic code and toward scaling massive, high-quality data. It provided the critical database necessary to unlock the deep learning breakthroughs that followed just three years later.`,
-<<<<<<< HEAD
         ne: { title: "फेइ-फेइ लीले इमेजनेट सुरु गरिन्", 
           description: `डा. फेइ-फेइ ली र उनको टोलीले इमेजनेट सार्वजनिक गरे, नाम लेखिएका १ करोड ४० लाखभन्दा बढी तस्बिरको ठूलो सङ्ग्रह। यसले एआईको ध्यान कोड मिलाउनुबाट हटाएर धेरै र राम्रो डेटा जम्मा गर्नेतिर लग्यो। तीन वर्षपछि आएको डिप लर्निङको सफलताका लागि यही डेटा आधार बन्यो।` }
-=======
-        ne: { title: "", 
-          description: `` }
->>>>>>> 12ef7093822e8cf559d0b1d37eb03809cf10bd69
       },
       { year: "2011",
         title: `Apple launches Siri`,
         image: "image/2011.jpg",
         description: `Apple introduces Siri, bringing voice-activated AI to millions of consumers. Early digital assistants were assigned submissive, feminized voices by default, and a 2019 UNESCO report documented that they were coded to deflect or flirt in response to harassment.`,
-<<<<<<< HEAD
         ne: { title: "एप्पलले सिरी सार्वजनिक गर्‍यो", 
           description: `एप्पलले सिरी ल्याएर बोलेर चलाइने एआई लाखौँ मानिससम्म पुर्‍यायो। सुरुका डिजिटल सहायकलाई नम्र, महिलाको आवाज दिइएको थियो। युनेस्कोको सन् २०१९ को प्रतिवेदनअनुसार दुर्व्यवहार गर्दा तिनीहरू कुरा टार्ने वा फ्लर्ट गर्ने गरी बनाइएका थिए। ` }
-=======
-        ne: { title: "", 
-          description: `` }
->>>>>>> 12ef7093822e8cf559d0b1d37eb03809cf10bd69
       }
     ]},
     { label: "2012 – 2018", events: [
@@ -115,49 +100,29 @@ At the same time, she argues that a machine cannot originate ideas of its own �
         title: `AlexNet Wins ImageNet Challenge`,
         image: "image/2012.jpg",
         description: `A deep learning model created by Alex Krizhevsky, Ilya Sutskever, and Geoffrey Hinton won a major image-recognition competition by cutting previous error rates nearly in half to an unprecedented 15.3%. By anchoring their model in massive, crowdsourced data and GPU acceleration, this milestone shifted the AI paradigm away from isolated algorithmic design toward computational scale. This event marked the beginning of the modern deep learning era and established data-intensive scale as the primary approach for AI development.`,
-<<<<<<< HEAD
         ne: { title: "एलेक्सनेटले इमेजनेट प्रतियोगिता जित्यो ", 
           description: `एलेक्स क्रिजेभ्स्की, इल्या सुत्स्केभर र जेफ्री हिन्टनको डिप लर्निङ मोडेलले तस्बिर चिन्ने ठूलो प्रतियोगिता जित्यो। यसले गल्ती झन्डै आधा घटाएर १५.३% मा झार्‍यो। धेरै डेटा र जीपीयूको शक्ति प्रयोग गरेर यसले एआईलाई राम्रो एल्गोरिदमभन्दा, ठूलो मापनमा भर पर्ने बनायो। यहीँबाट आधुनिक डिप लर्निङको युग सुरु भयो, र धेरै डेटा र कम्प्युटिङ एआई बनाउने मुख्य तरिका बन्यो।` }
-=======
-        ne: { title: "", 
-          description: `` }
->>>>>>> 12ef7093822e8cf559d0b1d37eb03809cf10bd69
       },
       { year: "2014",
         title: `Facebook launches DeepFace`,
         image: "image/2014.jpg",
         description: `Facebook announced face recognition with ~97% accuracy, roughly human-level, trained on photos its users had uploaded and tagged themselves. The breakthrough wasn't just technical: it showed that whoever holds the most personal data holds the most powerful AI.`,
-<<<<<<< HEAD
         ne: { title: "फेसबुकले डिपफेस सुरु गर्‍यो", 
           description: `फेसबुकले करिब ९७% सही, लगभग मानिसजत्तिकै अनुहार चिन्ने प्रणाली घोषणा गर्‍यो। यसलाई प्रयोगकर्ताले आफैँ अपलोड र ट्याग गरेका फोटोबाट सिकाइएको थियो। यो प्राविधिक सफलता मात्र थिएन: जोसँग धेरै व्यक्तिगत डेटा हुन्छ, उसैसँग सबैभन्दा शक्तिशाली एआई हुन्छ भन्ने यसले देखायो।` }
-=======
-        ne: { title: "", 
-          description: `` }
->>>>>>> 12ef7093822e8cf559d0b1d37eb03809cf10bd69
       },
       { year: "2016",
         title: `AlphaGo beats Go Grandmaster`,
         image: "image/2016.jpg",
         description: `Developed by DeepMind, AlphaGo defeated South Korean Go grandmaster Lee Sedol 4–1 in Seoul. Its play was widely praised for its creativity and unexpected moves, demonstrating that AI could produce strategies that surprised even elite human players. Beyond its technical significance, the match was a major geopolitical wake-up call, prompting China to accelerate its national AI strategy and contributing to the state-led AI competition that continues to shape global politics.`,
-<<<<<<< HEAD
         ne: { title: "अल्फागोले गो ग्र्यान्डमास्टरलाई हरायो", 
           description: `डिपमाइन्डको अल्फागोले सोलमा दक्षिण कोरियाका गो ग्र्यान्डमास्टर ली सेडोललाई ४–१ ले हरायो। यसको रचनात्मक र अचम्मका चालको धेरै प्रशंसा भयो। एआईले उत्कृष्ट खेलाडीलाई पनि चकित पार्न सक्छ भन्ने यसले देखायो। यो खेलले राजनीतिक रूपमा पनि झस्कायो, चीनले आफ्नो राष्ट्रिय एआई योजना तीव्र बनायो, र आज पनि विश्व राजनीतिलाई असर गर्ने देशहरूबीचको एआई प्रतिस्पर्धा बढ्यो।` }
-=======
-        ne: { title: "", 
-          description: `` }
->>>>>>> 12ef7093822e8cf559d0b1d37eb03809cf10bd69
       },
       { year: "2018",
         title: `Gender Shades Exposes AI Bias`,
         image: "image/2018.jpg",
         description: `This historic study exposed deep demographic disparities in computer vision. It revealed that AI facial recognition algorithms carried massive racial and gender biases due to flawed training data. The study exposed major racial and gender disparities in commercial facial-recognition systems and helped bring algorithmic bias into public and industry debate.`,
-<<<<<<< HEAD
         ne: { title: "Gender Shades ले एआई पूर्वाग्रह उजागर गर्‍यो", 
           description: `यो ऐतिहासिक अध्ययनले देखायो कि कम्प्युटरले अनुहार चिन्दा सबै समूहलाई बराबर व्यवहार गर्दैन। गलत तालिम डेटाका कारण एआईले अनुहार चिन्दा जाति र लिङ्गअनुसार ठूलो भेदभाव गर्थ्यो। व्यावसायिक प्रणालीहरूमा पनि यही समस्या भेटियो। यसले एआईमा हुने पूर्वाग्रहलाई जनता र उद्योगको बहसमा ल्यायो।` }
-=======
-        ne: { title: "", 
-          description: `` }
->>>>>>> 12ef7093822e8cf559d0b1d37eb03809cf10bd69
       }
     ]},
     { label: "2018 – 2024", events: [
@@ -165,49 +130,29 @@ At the same time, she argues that a machine cannot originate ideas of its own �
         title: `Amazon scraps biased AI hiring tool`,
         image: "image/2018_1.avif",
         description: `Amazon abandons its AI hiring tool after discovering that it had learned to favor male candidates and penalize resumes containing terms such as “women’s.” Trained on a decade of mostly male resumes, the system reflected patterns in the historical data it was given. The case highlighted how AI systems can reproduce and amplify existing biases, turning patterns from past data into automated decisions.`,
-<<<<<<< HEAD
         ne: { title: "Amazon ले पूर्वाग्रही एआई भर्ती उपकरण खारेज गर्‍यो", 
           description: `Amazon ले आफ्नो एआई भर्ती उपकरण बन्द गर्‍यो, किनभने यसले पुरुष उम्मेदवारलाई रोज्न र “women’s” (महिलाहरूको) शब्द भएका बायोडाटालाई कम अङ्क दिन सिकेको थियो। यसलाई दस वर्षका, धेरैजसो पुरुषका बायोडाटाबाट सिकाइएको थियो, त्यसैले यसले पुरानै ढाँचा दोहोर्‍यायो। यसले देखायो कि एआईले पुराना पूर्वाग्रहलाई दोहोर्‍याउँछ, बढाउँछ र स्वचालित निर्णयमा बदलिदिन्छ।` }
-=======
-        ne: { title: "", 
-          description: `` }
->>>>>>> 12ef7093822e8cf559d0b1d37eb03809cf10bd69
       },
       { year: "2022",
         title: `ChatGPT (GPT-3.5) released publicly`,
         image: "image/2022.jpg",
         description: `ChatGPT (GPT-3.5) is released publicly, making conversational generative AI accessible to a mass audience. Its rapid and widespread adoption made it one of the most visible AI tools in everyday use, reshaping how people encountered and used AI. It also raised new questions about accuracy, authorship, labor, privacy, bias, and the concentration of technological power.`,
-<<<<<<< HEAD
         ne: { title: "च्याटजीपीटी (GPT-3.5) सार्वजनिक", 
           description: `च्याटजीपीटी (GPT-3.5) सबैका लागि खुला भयो, जसले कुराकानी गर्ने एआई आम मानिसको हातमा पुर्‍यायो। छिट्टै धेरैले प्रयोग गर्न थालेकाले यो दैनिक जीवनमा सबैभन्दा चिनिने एआई उपकरणमध्ये एक बन्यो र मानिसले एआई प्रयोग गर्ने तरिका नै फेरियो। यसले शुद्धता, लेखकको हक, रोजगारी, गोपनीयता, पूर्वाग्रह र प्रविधिको शक्ति केही कम्पनीमा थुप्रिनेबारे नयाँ प्रश्न उठायो।` }
-=======
-        ne: { title: "", 
-          description: `` }
->>>>>>> 12ef7093822e8cf559d0b1d37eb03809cf10bd69
       },
       { year: "2023",
         title: `The Generative AI Copyright Reckoning`,
         image: "image/2023.jpg",
         description: `The explosion of consumer generative tools triggers unprecedented legal battles, headlined by The New York Times suing Microsoft and OpenAI for systemic copyright infringement. Concurrently, a historic Hollywood writers' strike (WGA) forces the industry to implement strict labor guardrails restricting studios from replacing human writers with text models.`,
-<<<<<<< HEAD
         ne: { title: "जेनेरेटिभ एआई र प्रतिलिपि अधिकारको विवाद", 
           description: `सामग्री बनाउने एआई उपकरण धेरै बढेपछि ठूला कानुनी लडाइँ सुरु भए। सबैभन्दा चर्चित, द न्युयोर्क टाइम्सले आफ्नो सामग्री अनुमतिबिना प्रयोग गरेको भन्दै माइक्रोसफ्ट र ओपनएआईविरुद्ध मुद्दा हाल्यो। उही समयमा हलिउडका लेखकहरूको ऐतिहासिक हडताल (WGA) ले स्टुडियोहरूलाई मानव लेखकको ठाउँमा एआई प्रयोग गर्न रोक्ने कडा नियम मान्न बाध्य बनायो।` }
-=======
-        ne: { title: "", 
-          description: `` }
->>>>>>> 12ef7093822e8cf559d0b1d37eb03809cf10bd69
       },
       { year: "2024",
         title: `EU AI Act`,
         image: "image/2024.jpg",
         description: `The European Union passes the EU AI Act, creating the world's first major binding law to regulate AI. The law ranks AI systems by their level of risk. It completely bans tools that threaten human rights – like government social tracking – and forces companies building large tech models to be transparent and open to outside audits.`,
-<<<<<<< HEAD
         ne: { title: "ईयू एआई ऐन ", 
           description: `युरोपेली सङ्घले ईयू एआई ऐन पारित गर्‍यो, एआई नियन्त्रण गर्ने संसारकै पहिलो ठूलो कानुन। यसले एआईलाई जोखिमका आधारमा वर्गमा बाँड्छ। मानव अधिकारमा खतरा पुर्‍याउने उपकरण, जस्तै सरकारले नागरिकको निगरानी गर्ने प्रणाली, पूरै प्रतिबन्ध लगाइन्छ। ठूला एआई मोडेल बनाउने कम्पनीले पारदर्शी हुनुपर्छ र बाहिरी जाँच स्वीकार्नुपर्छ।` }
-=======
-        ne: { title: "", 
-          description: `` }
->>>>>>> 12ef7093822e8cf559d0b1d37eb03809cf10bd69
       }
     ]},
     { label: "2024 – 2025", events: [
@@ -215,25 +160,15 @@ At the same time, she argues that a machine cannot originate ideas of its own �
         title: `African Data Workers Sue Meta`,
         image: "image/2024_1.webp",
         description: `Outsourced data workers in Kenya challenge a law that could protect foreign tech companies from being sued locally. In a landmark case in Nairobi, a judge also rules that Meta, Facebook’s parent company, can be sued in Kenya. The case involves more than 140 African content moderators who developed severe PTSD while reviewing graphic content for less than $4 an hour. The case highlights the human costs and legal challenges behind AI systems.`,
-<<<<<<< HEAD
         ne: { title: "अफ्रिकी डेटा कामदारहरूले मेटाविरुद्ध मुद्दा हाले", 
           description: `केन्याका आउटसोर्स डेटा कामदारहरूले विदेशी प्रविधि कम्पनीलाई स्थानीय मुद्दाबाट जोगाउन सक्ने कानुनलाई चुनौती दिए। नाइरोबीको ऐतिहासिक मुद्दामा न्यायाधीशले फेसबुकको मूल कम्पनी मेटामाथि केन्यामै मुद्दा चलाउन सकिने फैसला गरे। यस मुद्दामा घण्टाको ४ डलरभन्दा कम पैसामा डरलाग्दा सामग्री हेर्दा गम्भीर मानसिक आघात (PTSD) भोगेका १४० भन्दा बढी अफ्रिकी कन्टेन्ट मोडरेटर छन्। यसले एआईपछाडि लुकेको मानवीय मूल्य र कानुनी चुनौती देखाउँछ।` }
-=======
-        ne: { title: "", 
-          description: `` }
->>>>>>> 12ef7093822e8cf559d0b1d37eb03809cf10bd69
       },
       { year: "2025",
         title: `AI Agents`,
         image: "image/2025.jpg",
         description: `AI began moving beyond answering questions to taking action. AI agents can now plan and carry out tasks with greater autonomy – browsing websites, using tools, writing and running code, and adapting their actions based on what they observe. Greater autonomy also brings greater risk, raising concerns about accountability when AI agents make harmful decisions or cause damage.`,
-<<<<<<< HEAD
         ne: { title: "एआई एजेन्टहरू", 
           description: `एआई प्रश्नको जवाफ दिनुमा मात्र सीमित नरही आफैँ काम गर्न थाल्यो। एआई एजेन्टहरूले अब धेरै हदसम्म आफैँ योजना बनाएर काम सक्छन्, वेबसाइट हेर्ने, उपकरण चलाउने, कोड लेख्ने र चलाउने, र देखेको कुराअनुसार काम मिलाउने। तर जति धेरै स्वतन्त्रता, उति धेरै जोखिम। एजेन्टले गलत निर्णय गरे वा नोक्सानी गरे जिम्मेवार को हुने भन्ने चिन्ता बढेको छ।` }
-=======
-        ne: { title: "", 
-          description: `` }
->>>>>>> 12ef7093822e8cf559d0b1d37eb03809cf10bd69
       }
     ]}
   ]
