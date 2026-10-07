@@ -3,7 +3,7 @@ window.AI_TIMELINE = {
   title_ne: "एआईको इतिहास",
   sections: [
     { label: "1843 – 1955", events: [
-      { 
+      { year: "1843",
         title: `Ada Lovelace: Imagination and Boundaries`,
         image: "image/1843.jpg",
         description: `While working on Charles Babbage’s plans for the Analytical Engine, Ada Lovelace publishes what is widely considered the first computer algorithm. She also imagines that machines could go beyond arithmetic and compose music, writing that the Engine could “weave algebraic patterns just as the Jacquard loom weaves flowers and leaves.”
